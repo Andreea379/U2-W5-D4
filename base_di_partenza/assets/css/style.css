@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+/* HEADER */
+header{
+    font-family: roboto;
+    font-weight: 400;
+    background-color:#ffc017 ;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    border-bottom: 1px solid rgb(53, 53, 53);
+    position: relative;
+}
+header img{
+    position: absolute;
+    left: 10rem;
+}
+header div{
+    position: absolute;
+    right: 10rem;
+}
+
+header div a{
+    text-decoration: none;
+    color: black;
+    margin-right: 1.7rem;
+}
+header div button{
+    font-family: roboto;
+    font-weight: 400;
+    background-color: #191919;
+    color: white;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+}
+
+/* HERO SECTION */
+hero{
+    background-color:#ffc017; 
+    height: 10rem;
+}
+.position-container{
+    position: relative;
+}
+hero img{
+    position:absolute;
+    right: -10px;
+}
+
+.position-container1{
+    margin-left: 10rem;
+}
+h1{
+    font-family:spectral;
+    font-weight: 400;
+    font-size: 8rem;
+    margin-top: 3rem;
+}
+
+p{
+    font-family:spectral;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+hero button{
+    font-family: roboto, sans-serif;
+    font-weight: 350;
+    font-size: 1.3rem;
+    background-color: #191919;
+    color: white;
+    width: 13rem;
+    height: 2.3rem;
+    border-radius: 2rem;
+    margin-top: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
