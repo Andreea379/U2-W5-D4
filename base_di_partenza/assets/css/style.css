@@ -20,34 +20,74 @@ body{
 
 /* HEADER */
 header{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
     font-family: roboto;
     font-weight: 350;
     background-color:#ffc017 ;
     display: flex;
     align-items: center;
     height: 6rem;
-    border-bottom: 1px solid rgb(53, 53, 53);
-    position: relative;
+    border-bottom: 1px solid rgb(128, 125, 125);
+    /* position: relative; */
 }
 
-header img{
+header.scroll{
+    animation: scroll 1s ;
+    animation-fill-mode: both;
+}
+
+
+
+@keyframes scroll{
+    0%{
+        background-color: #ffc017 ;
+    }
+    50%{
+        background-color: #fdd66c ;
+    }
+    100%{
+        background-color: white;
+    }
+}
+
+header div div button.scrollButton{
+    animation: scrollButton 1s ;
+    animation-fill-mode: both;
+}
+
+@keyframes scrollButton{
+    0%{
+        background-color: #191919 ;
+    }
+    100%{
+        background-color: #1a8917;
+    }
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+
+header div img{
     position: absolute;
     left: 13rem;
 }
 
-header div{
+header div div{
     position: absolute;
     right: 13rem;
 }
 
-header div a{
+header div  div a{
     text-decoration: none;
     font-family: roboto, sans-serif;
     font-weight: 400;
     color: rgb(31, 31, 31);
     margin-right: 2rem;
 }
-header div button{
+header div div button{
     font-family: roboto, sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -62,10 +102,14 @@ header div button{
 /* MAIN */
 
 /* FIRST SECTION */
+main{
+    position: relative;
+    top: 6rem;
+}
 .first-section{
     background-color:#ffc017; 
     height: 28.5rem;
-    border-bottom: 1px solid rgb(53, 53, 53);
+    border-bottom: 1px solid rgb(128, 125, 125);
 }
 
 .position-container{
@@ -110,7 +154,8 @@ h1{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 10rem;
-
+    padding-bottom: 5rem;
+    border-bottom: 1px solid rgb(155, 152, 152);
 }
 
 .trending{
@@ -201,7 +246,7 @@ h3{
 }
 
 .column-articles{
-    width: 65%;
+    width: 131%;
     display: flex;
     flex-direction: column;
     gap: 3rem;
